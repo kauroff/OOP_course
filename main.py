@@ -36,3 +36,4 @@ class SuperJobAPI(GetAPI):
         response = requests.get(self.url, headers={'X-Api-App-Id': os.getenv('SJ_API')})
         data = response.json()
         return data
+
