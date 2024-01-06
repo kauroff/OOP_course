@@ -63,7 +63,7 @@ class Super_job(Vacancy, APIManager):
         """Выгрузка данных по 'Super_job' по запросам пользователя по АПИ - ключу и возвращается словарь"""
 
         headers = {
-            'X-Api-App-Id': os.getenv('API_KEY_SJ'),
+            'X-Api-App-Id': os.getenv('SJ_API'),
         }
         data = requests.get(self.url, headers=headers,
                             params={'keywords': self.name, 'page': self.page, 'count': self.top_n}).json()
