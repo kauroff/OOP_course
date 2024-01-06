@@ -39,4 +39,4 @@ class SuperJobAPI(GetAPI):
 
 
 super_job = HeadHunterAPI()
-print(super_job.unit())
+
